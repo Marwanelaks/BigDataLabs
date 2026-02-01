@@ -1,0 +1,17 @@
+4️⃣ Qu’est-ce qu’un micro-batch dans DStream ?
+
+Un micro-batch est un petit lot de données collecté pendant un intervalle de temps fixe.
+Dans Spark Streaming, les flux continus sont découpés en micro-batches, chacun étant traité comme un RDD.
+
+Cette méthode permet à Spark de traiter les données en quasi temps réel tout en conservant le modèle de calcul distribué.
+
+5️⃣ Sur quelle structure repose un DStream ?
+
+Un DStream (Discretized Stream) repose sur une suite de RDDs.
+Chaque RDD correspond aux données reçues pendant un intervalle de temps donné (micro-batch).
+
+Les transformations appliquées sur un DStream sont automatiquement appliquées à chaque RDD qui le compose.
+
+6️⃣ Quelle est la durée du batch utilisée ?
+
+La durée du batch utilisée dans ce TP est de 5 secondes.
